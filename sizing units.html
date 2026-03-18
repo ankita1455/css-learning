@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sizing units</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        html{
+            font-size: 12px;
+        }
+       .box{
+        box-sizing: border-box;
+        border:2px solid black;
+        /*width: 2048px;*/
+        width:80vw;
+        height:10vh;
+        margin:auto;
+        background-color: aqua;
+    
+       }
+       .container{
+                box-sizing: border-box;
+        border:2px solid black;
+        /*width: 2048px;*/
+        width:80vw;
+        height:50vh;
+        margin: 23px auto;
+        background-color: aqua;
+        /*font-size: 16px;*/
+       }
+       .container p{
+       /*  font-size: 2em;*/
+      font-size:2rem;
+       }
+       .mycont{
+        background-color: yellow;
+        color: red;
+        font-size: 22px;
+        width:100vmin;
+       }
+    </style>
+</head>
+<body>
+    <div class="box">
+        i am a box
+    </div>
+    <div class="container">
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusantium fuga quidem ab? Ratione iure voluptates sequi nam. Cum ad, ipsum minima consectetur quos nemo. Aliquid earum quae at ea cum atque sint possimus ducimus vero, est, ad, error esse reprehenderit labore quo explicabo totam eius eaque rem incidunt cumque! Error a voluptatem minima praesentium pariatur.
+        </p>
+    </div>
+    <div class="mycont">
+        this is an another container
+    </div>
+</body>
+</html>
