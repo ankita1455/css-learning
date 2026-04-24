@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animations</title>
+</head>
+<style>
+    .container{
+        background-color: aqua;
+       height:40vh;
+       width:60vw;
+    }
+    .box{
+       background-color: blanchedalmond;
+        height:34px;
+        width:45px;
+        /*animation-name: meraanimation;
+        animation-duration:4s; 
+        animation-iteration-count:infinite;
+        animation-timing-function:ease-in;
+        animation-delay:3s;
+        animation-direction:alternate-reverse;
+        animation-play-state:paused;*/
+        animation: meraanimation 3s ease-in-out 1s infinite,
+                   ankita2animation 3s ease-in-out 1s infinite ;
+    }
+    @keyframes meraanimation{
+    form{
+           }
+    to{
+        transform:translateX(500px);
+         }
+    }
+    @keyframes ankita2animation{
+        0%{ 
+            transform: rotate(100deg);
+        }
+        30%{
+             transform: rotate(150deg);
+        }
+        50%{
+ transform: rotate(200deg);
+        }
+        80%{
+ transform: rotate(280deg);
+        }
+        100%{
+ transform: rotate(300deg);
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+</body>
+</html>
